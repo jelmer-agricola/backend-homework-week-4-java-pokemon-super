@@ -5,8 +5,8 @@ public class ElectricPokemon extends Pokemon {
     private String lightningColor;
     private String sound;
 
-    public ElectricPokemon(String name, int hp, int level) {
-        super(name, level, hp);
+    public ElectricPokemon(String name, int level, int hp,  String lightningColor, String food, String sound) {
+        super(name, level, hp, food, sound);
 
         this.lightningColor= lightningColor;
         this.sound = sound;
@@ -21,6 +21,8 @@ public class ElectricPokemon extends Pokemon {
     public void makeSound(){
         System.out.println(sound);
     }
+
+
 
     public void lightningBolt(){
         System.out.println(super.getName() + " throws a " + lightningColor + " lightning bolt");
